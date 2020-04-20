@@ -16,10 +16,6 @@ function Entity.new(name, x, y, max_speed, animationSpeed, direction, state, spr
     obj.spriteFormat = spriteFormat
     obj.checkstate = state
     
-    function obj:getTest()
-        return self.test
-    end
-
     function obj.loadSprite()
         obj.sprite = AnimatedSprite.new(obj.x, obj.y, 0, 1, 1, obj.name..'_'..obj.state..'.png', obj.spriteFormat[1], obj.spriteFormat[2], obj.animationSpeed)
     end
